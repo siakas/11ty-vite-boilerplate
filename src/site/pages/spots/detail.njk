@@ -14,12 +14,12 @@ eleventyComputed:
 <p>{{ spot.description }}</p>
 
 <ul>
-  {% if pagination.href.previous %}
+  {%- if pagination.href.previous -%}
     <li><a href="{{ pagination.href.previous }}">{{ pagination.page.previous.name }}</a></li>
-  {% endif %}
-  {% if pagination.href.next %}
+  {%- endif -%}
+  {%- if pagination.href.next -%}
     <li><a href="{{ pagination.href.next }}">{{ pagination.page.next.name }}</a></li>
-  {% endif %}
+  {%- endif -%}
 </ul>
 
 <p><a href="/spots">スポット一覧に戻る</a></p>
