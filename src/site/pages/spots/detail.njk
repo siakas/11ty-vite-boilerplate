@@ -5,7 +5,7 @@ pagination:
   size: 1
   alias: spot
 permalink: "spots/{{ spot.index | slug }}/"
-renderData:
+eleventyComputed:
   title: "{{ spot.name }}（{{ spot.city }}）"
 ---
 

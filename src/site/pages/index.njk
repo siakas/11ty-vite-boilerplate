@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.njk
-title: トップページ
+eleventyComputed:
+  title: "{{ contents.pages.top.name }}"
 ---
 
 <h1>{{ title }}</h1>
