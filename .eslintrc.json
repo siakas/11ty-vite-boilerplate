@@ -8,6 +8,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
+  "plugins": ["import", "unused-imports"],
   "rules": {
     // 任意の構文の間に空行を入れるかどうかの定義
     // ここでは return 文の前に空行を入れるが、一行の const 宣言の直後に限って空行なしを許容する設定としている
@@ -24,5 +25,91 @@
         "next": "return"
       }
     ]
-  }
+  },
+
+  // 使用していないインポートを自動削除するルール
+  // 本プラグインとコンフリクトを起こす no-unused-vars の設定を無効化し、
+  // 変数および引数の名前の頭に `_` をつけた場合のみ許可する設定をこちらでおこなっている
+  "no-unused-vars": "off",
+  "unused-imports/no-unused-imports": "error",
+  "unused-imports/no-unused-vars": [
+    "warn",
+    {
+      "vars": "all",
+      "varsIgnorePattern": "^_",
+      "args": "after-used",
+      "argsIgnorePattern": "^_"
+    }
+  ],
+
+  // インポートの際のファイル拡張子を記述するかを定義するルール
+  // ここでは npm パッケージ以外のファイルについて、`.js`、`.jsx`、`.ts`、`.tsx` のみ拡張子を省略し、
+  // それ以外のファイルは拡張子を記述させるように設定
+  "import/extensions": [
+    "error",
+    {
+      "ignorePackages": true,
+      "pattern": {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    }
+  ],
+
+  // 最後のインポート文のあとは空行を入れるよう設定
+  "import/newline-after-import": "error",
+
+  // モジュールインポートの順番をカスタマイズできるルール
+  // react および react-dom モジュールを最初に、
+  // 非相対パスで記述した内部モジュールのコンポーネントを相対パスモジュールの直前に、
+  // CSS Modules ファイルのインポートを最後にするよう設定
+  // import from `xxx` 形式の記述は eslint-plugin-import が認識できないため、通常の CSS ファイルのインポート文はソート不可
+  "import/order": [
+    "error",
+    {
+      "groups": [
+        "type",
+        "builtin",
+        "external",
+        "internal",
+        ["parent", "sibling"],
+        "object",
+        "index"
+      ],
+      "pathGroups": [
+        // type のインポートを最上部に配置、ただし @types/** からのインポートは外部インポートのあとに配置
+        {
+          "pattern": "@/types/**",
+          "group": "type",
+          "position": "after"
+        },
+        // @/ からインポートするファイルをグルーピング
+        {
+          "pattern": "{@/**}",
+          "group": "internal",
+          "position": "before"
+        },
+        // 非相対パスで記述した内部モジュールのコンポーネントを相対パスモジュールの直前に配置
+        {
+          "pattern": "{[A-Z]*,**/[A-Z]*}",
+          "group": "internal",
+          "position": "after"
+        },
+        // @@/ からインポートするファイルを一番最後に配置
+        {
+          "pattern": "@@/**",
+          "group": "index",
+          "position": "after"
+        }
+      ],
+      "newlines-between": "never",
+      "pathGroupsExcludedImportTypes": ["builtin"],
+      "alphabetize": {
+        "order": "asc",
+        "caseInsensitive": true
+      }
+    }
+  ]
 }
