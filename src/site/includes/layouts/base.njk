@@ -13,12 +13,14 @@ title: 11ty Example Site
   </script>
 </head>
 <body>
-  {# パーシャルの読み込み #}
-  {% include "partials/header.njk" %}
+  <div class="l-page">
+    {# パーシャルの読み込み #}
+    {% include "partials/header.njk" %}
 
-  {{ content | safe }}
+    {{ content | safe }}
 
-  {% include "partials/footer.njk" %}
+    {% include "partials/footer.njk" %}
+  </div>
 </body>
 </html>
 

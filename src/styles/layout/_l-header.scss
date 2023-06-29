@@ -1,0 +1,10 @@
+@use "../global" as g;
+
+.l-header {
+  border-bottom: 1px solid #000;
+
+  @include g.below(md) {
+    border-bottom-color: #f00;
+    border-bottom-width: 4px;
+  }
+}

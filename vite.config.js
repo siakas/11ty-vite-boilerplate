@@ -1,9 +1,10 @@
 import { defineConfig } from 'vite'
 import { eleventyPlugin } from 'vite-plugin-eleventy'
+import sassGlobImports from 'vite-plugin-sass-glob-import'
 
 export default defineConfig({
   root: 'src/site/pages',
-  plugins: [eleventyPlugin()],
+  plugins: [eleventyPlugin(), sassGlobImports()],
   build: {
     outDir: '../../../dist',
     emptyOutDir: true,
