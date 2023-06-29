@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+title: スポット一覧
+---
+
+<h1>{{ title }}</h1>
+
+<ul>
+  {% for spot in contents.spot %}
+    <li><a href="/spots/{{ spot.index }}">{{ spot.name }}</a></li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: contents.spot
+  size: 1
+  alias: spot
+permalink: "spots/{{ spot.index | slug }}/"
+renderData:
+  title: "{{ spot.name }}（{{ spot.city }}）"
+---
+
+<h1>{{ spot.name }}（{{ spot.city }}）</h1>
+<p>{{ spot.kana }}</p>
+<p>{{ spot.description }}</p>
+
+<ul>
+  {% if pagination.href.previous %}
+    <li><a href="{{ pagination.href.previous }}">{{ pagination.page.previous.name }}</a></li>
+  {% endif %}
+  {% if pagination.href.next %}
+    <li><a href="{{ pagination.href.next }}">{{ pagination.page.next.name }}</a></li>
+  {% endif %}
+</ul>
+
+<p><a href="/spots">スポット一覧に戻る</a></p>
