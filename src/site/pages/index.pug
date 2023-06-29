@@ -1,14 +1,11 @@
-doctype html
-html(lang="ja")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
-    body
-        main
-            p
-                | 本文本文本文本文本文本文本文本文本文
-            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dignissimos aliquid provident ut, nemo mollitia et, consequatur sed illo eius sint numquam explicabo, obcaecati laborum debitis quaerat. Fuga, hic sapiente?
-            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsum omnis reprehenderit, delectus ipsa possimus harum ab praesentium nemo ex. Qui reiciendis facere, placeat maiores ad sunt deserunt minima. Ut optio harum possimus itaque, ipsam minus sapiente architecto. Harum aliquam explicabo dolor culpa quo velit, reiciendis quos assumenda voluptas dicta obcaecati esse distinctio iste molestiae eveniet! Mollitia, at? Sequi ducimus, voluptates, consectetur quibusdam perspiciatis mollitia magnam iste voluptatem iure doloribus tempore possimus tempora debitis ipsam culpa ratione id officiis laboriosam fugit! Adipisci error vel quaerat corrupti laboriosam, quidem facere maxime quasi molestiae numquam, mollitia minima optio voluptatum neque autem harum.
-            p Quam, quo commodi. Libero architecto consequuntur minima facere? Tempore consequatur quam officia tenetur dicta, in officiis nobis blanditiis, impedit minima harum at dolorum quaerat! Provident voluptatum at, qui in impedit debitis quia, quibusdam hic nesciunt omnis ratione quas recusandae explicabo numquam tempora dolor nisi? Nulla odit iure rerum voluptas iste saepe reprehenderit ipsa veniam eligendi ipsum. Eius, sit sapiente dolorem nemo beatae qui fugiat, fugit similique nisi fuga repellendus. Aut quasi hic cum iure quidem error accusamus obcaecati suscipit odio nostrum, unde optio culpa maiores labore dicta ut minima sunt harum soluta reprehenderit nesciunt eligendi ipsa. Esse, maxime! Optio, animi?
-            p Dolorum magnam soluta nemo unde, dolor molestias fugiat sit dolores aperiam omnis quos distinctio quasi numquam saepe amet labore error. Voluptatibus tempore, laborum, ullam facilis officia unde ab esse accusantium assumenda aspernatur repellendus sit optio dignissimos veritatis rem error, libero ipsa sapiente aut maiores impedit dolore natus? Adipisci ex tempore molestiae quas provident voluptate eaque perspiciatis nemo quis velit fuga ratione, corrupti sunt unde temporibus ab fugit illum voluptates at vel, incidunt voluptatem facilis? Quibusdam at impedit magni. Alias, sequi, hic aut ex eveniet blanditiis omnis harum, quia et pariatur quaerat dicta incidunt mollitia nemo voluptatum aliquid praesentium minus molestias.
+extends /layouts/base
+
+block content
+    main
+        p 静寂とした冬の森を、雪童子は一人で歩いていた。足元に積もった新雪は靴の下でキュッと音を立て、彼の唯一の同伴者だった。
+        p 視界を遮るほどの雪が舞い降りてきて、遠くの山々を白一色に染め上げていた。その風景は美しいだけでなく、孤独感と同時に深い静けさをもたらした。
+        p 彼の目的地は、冷たく美しい氷の宮殿。その中には、とても大切なものが保管されていると、老いた村の長から聞かされていた。彼女のために、それを取り戻さなければならない。雪童子はそう思いながら、凍てついた風に顔をさらして前進を続けた。
+
+        p
+            //- Mixin の読み込み
+            +base-button
