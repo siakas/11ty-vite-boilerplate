@@ -12,6 +12,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@styles': new URL('src/styles', import.meta.url).pathname,
+      '@scripts': new URL('src/scripts', import.meta.url).pathname,
     },
   },
   css: {
