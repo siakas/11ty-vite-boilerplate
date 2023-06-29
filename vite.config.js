@@ -8,4 +8,15 @@ export default defineConfig({
     outDir: '../../../dist',
     emptyOutDir: true,
   },
+  resolve: {
+    alias: {
+      '@styles': new URL('src/styles', import.meta.url).pathname,
+    },
+  },
+  css: {
+    devSourcemap: true,
+    postcss: {
+      plugins: [require('autoprefixer')],
+    },
+  },
 })
