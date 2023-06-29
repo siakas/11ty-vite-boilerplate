@@ -1,0 +1,13 @@
+---
+layout: layouts/base
+pagination:
+  data: contents.spot
+  size: 1
+  alias: spot
+permalink: "spot/{{ spot.index | slug }}/"
+renderData:
+  title: "{{ spot.name }}"
+---
+
+<p>ほげほげ</p>
+<p>{{ spot.name }}</p>

@@ -9,7 +9,6 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "@prettier/plugin-pug": "^2.5.1",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.8.0",
     "eslint-config-standard": "^17.1.0",
@@ -18,7 +17,6 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-unused-imports": "^2.0.0",
     "prettier": "^2.8.8",
-    "pug-include-glob": "^0.4.3",
     "sass": "^1.63.6",
     "stylelint": "^15.9.0",
     "stylelint-config-prettier": "^9.0.5",
