@@ -5,6 +5,8 @@
     "stylelint-config-prettier"
   ],
   "rules": {
-    "order/properties-alphabetical-order": null
+    "order/properties-alphabetical-order": null,
+    "max-nesting-depth": 8,
+    "selector-max-compound-selectors": 8
   }
 }

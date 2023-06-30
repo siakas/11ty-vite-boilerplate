@@ -1,0 +1,17 @@
+@use "../global" as g;
+
+.l-footer {
+  color: g.palette("gray", "400");
+  background-color: #111827;
+
+  a {
+    color: g.palette("gray", "400");
+    text-decoration: none;
+  }
+
+  > .inner {
+    max-width: 1536px;
+    padding: 0 2rem;
+    margin: auto;
+  }
+}

@@ -16,9 +16,12 @@ title: 11ty Example Site
 <body>
   <div class="l-page">
     {# パーシャルの読み込み #}
+    {% include "partials/banner.njk" %}
     {% include "partials/header.njk" %}
 
-    {{ content | safe }}
+    <main class="l-main">
+      {{ content | safe }}
+    </main>
 
     {% include "partials/footer.njk" %}
   </div>
