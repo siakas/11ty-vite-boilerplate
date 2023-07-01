@@ -1,0 +1,9 @@
+@use "../../global" as g;
+
+.page-title {
+  margin-bottom: 1.5rem;
+  font-size: 1.875rem;
+  font-weight: bold;
+  line-height: 2.25rem;
+  color: g.palette("gray", "800");
+}

@@ -1,0 +1,46 @@
+@use "../../global" as g;
+
+.spot-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+
+  a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+      .thumb {
+        > img {
+          scale: 1.1;
+        }
+      }
+    }
+  }
+
+  .thumb {
+    height: 10rem;
+    overflow: hidden;
+    background-color: g.palette("gray", "100");
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+      0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+    > img {
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition-duration: 0.2s;
+    }
+  }
+
+  .label {
+    margin: 0.4rem 0 0;
+    font-weight: bold;
+  }
+}

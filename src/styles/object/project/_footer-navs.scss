@@ -1,0 +1,18 @@
+@use "../../global" as g;
+
+.footer-navs {
+  > .hdg {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: g.palette("gray", "100");
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+  }
+}

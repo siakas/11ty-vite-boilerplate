@@ -1,5 +1,7 @@
 @use "foundation";
 @use "layout/**";
+@use "object/project/**";
+@use "object/utility/**";
 
 .btn-alert {
   padding: 12px 16px;

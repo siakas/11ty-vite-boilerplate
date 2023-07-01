@@ -1,0 +1,72 @@
+@use "../../global" as g;
+
+.spot-detail {
+  max-width: 1280px;
+  padding: 0 2rem;
+  margin: auto;
+
+  > .inner {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3rem;
+  }
+
+  .image {
+    height: auto;
+    overflow: hidden;
+    background-color: g.palette("gray", "100");
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+      0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+    img {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .outline {
+    padding-top: 2rem;
+
+    > .kana {
+      margin-bottom: 0.25rem;
+      font-weight: bold;
+      color: g.palette("indigo", "500");
+    }
+
+    > h1 {
+      margin-bottom: 1.5rem;
+      font-size: 1.875rem;
+      line-height: 2.25rem;
+      color: g.palette("gray", "800");
+    }
+
+    > .description {
+      margin-bottom: 2rem;
+      font-size: 1.125rem;
+      line-height: 2rem;
+      color: g.palette("gray", "800");
+    }
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+
+    a {
+      display: block;
+      min-width: 200px;
+      padding: 0.75rem 2rem;
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: g.palette("gray", "500");
+      text-align: center;
+      text-decoration: none;
+      background-color: g.palette("gray", "200");
+      border-radius: 0.5rem;
+    }
+  }
+}

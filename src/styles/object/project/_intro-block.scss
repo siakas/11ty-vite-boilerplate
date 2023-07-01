@@ -1,0 +1,26 @@
+@use "../../global" as g;
+
+.intro-block {
+  > .intro {
+    margin-bottom: 0.75rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+    line-height: 1.75rem;
+    color: g.palette("indigo", "500");
+  }
+
+  > h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.875rem;
+    font-weight: bold;
+    line-height: 2.25rem;
+    color: g.palette("gray", "800");
+  }
+
+  > .text {
+    max-width: 768px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: g.palette("gray", "500");
+  }
+}

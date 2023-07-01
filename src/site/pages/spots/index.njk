@@ -3,10 +3,19 @@ layout: layouts/base.njk
 title: スポット一覧
 ---
 
-<h1>{{ title }}</h1>
+<h1 class="page-title">{{ title }}</h1>
 
-<ul>
+<ul class="spot-list">
   {%- for spot in contents.spot -%}
-    <li><a href="/spots/{{ spot.index }}">{{ spot.name }}</a></li>
+    <li>
+      <a href="/spots/{{ spot.index }}">
+        <div class="thumb">
+          <img src="https://picsum.photos/id/{{ spot.index * 4 }}/600/600" alt="" loading="lazy">
+        </div>
+        <p class="label">
+          {{ spot.name }}
+        </p>
+      </a>
+    </li>
   {%- endfor -%}
 </ul>

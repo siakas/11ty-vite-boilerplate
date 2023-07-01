@@ -9,17 +9,29 @@ eleventyComputed:
   title: "{{ spot.name }}（{{ spot.city }}）"
 ---
 
-<h1>{{ spot.name }}（{{ spot.city }}）</h1>
-<p>{{ spot.kana }}</p>
-<p>{{ spot.description }}</p>
+<div class="spot-detail">
+  <div class="inner">
+    <div>
+      <div class="image">
+        <img src="https://picsum.photos/id/{{ spot.index * 4 }}/800/800" alt="">
+      </div>
+    </div>
 
-<ul>
-  {%- if pagination.href.previous -%}
-    <li><a href="{{ pagination.href.previous }}">{{ pagination.page.previous.name }}</a></li>
-  {%- endif -%}
-  {%- if pagination.href.next -%}
-    <li><a href="{{ pagination.href.next }}">{{ pagination.page.next.name }}</a></li>
-  {%- endif -%}
-</ul>
+    <div class="outline">
+      <p class="kana">{{ spot.kana }}</p>
+      <h1>{{ spot.name }}（{{ spot.city }}）</h1>
+      <p class="description">{{ spot.description }}</p>
 
-<p><a href="/spots">スポット一覧に戻る</a></p>
+      <ul class="pagination">
+        {%- if pagination.href.previous -%}
+          <li>
+            <a href="{{ pagination.href.previous }}">
+              {{ pagination.page.previous.name }}</a></li>
+        {%- endif -%}
+        {%- if pagination.href.next -%}
+          <li><a href="{{ pagination.href.next }}">{{ pagination.page.next.name }}</a></li>
+        {%- endif -%}
+      </ul>
+    </div>
+  </div>
+</div>
