@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>スポット一覧</title>
     
-    <script type="module" crossorigin src="/assets/-680d1d9d.js"></script>
-    <link rel="stylesheet" href="/assets/index-37645d14.css">
+    <script type="module" crossorigin src="/assets/-dccfafaf.js"></script>
+    <link rel="stylesheet" href="/assets/index-b259ee7f.css">
   </head>
   <body>
     <div class="l-page">
@@ -18,8 +18,8 @@
       <header class="l-header">
         <div>
           <h1>
-            <a href="/" class="text-black-800 inline-flex items-center gap-2.5 text-2xl font-bold md:text-3xl" aria-label="logo">
-              <svg width="95" height="94" viewBox="0 0 95 94" class="h-auto w-6 text-indigo-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <a href="/" aria-label="logo">
+              <svg width="95" height="94" viewBox="0 0 95 94" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M96 0V47L48 94H0V47L48 0H96Z" />
               </svg>
               Flowrift
@@ -39,70 +39,448 @@
       </header>
 
       <main class="l-main">
-        <h1>スポット一覧</h1>
+        <h1 class="page-title">スポット一覧</h1>
 
-        <ul>
-          <li><a href="/spots/0">石山寺</a></li>
-          <li><a href="/spots/1">靱公園</a></li>
-          <li><a href="/spots/2">ガーデンミュージアム比叡</a></li>
-          <li><a href="/spots/3">勧修寺</a></li>
-          <li><a href="/spots/4">京都府立植物園</a></li>
-          <li><a href="/spots/5">三千院</a></li>
-          <li><a href="/spots/6">城北公園</a></li>
-          <li><a href="/spots/7">中之島公園</a></li>
-          <li><a href="/spots/8">万博記念公園</a></li>
-          <li><a href="/spots/9">枚方市 市民の森</a></li>
-          <li><a href="/spots/10">ひらかたパーク</a></li>
-          <li><a href="/spots/11">びわ湖大津館</a></li>
-          <li><a href="/spots/12">藤森神社</a></li>
-          <li><a href="/spots/13">平安神宮</a></li>
-          <li><a href="/spots/14">三室戸寺</a></li>
-          <li><a href="/spots/15">山田池公園</a></li>
-          <li><a href="/spots/16">詩仙堂</a></li>
-          <li><a href="/spots/17">金福寺</a></li>
-          <li><a href="/spots/18">智積院</a></li>
-          <li><a href="/spots/19">等持院</a></li>
-          <li><a href="/spots/20">圓通寺</a></li>
-          <li><a href="/spots/21">安楽寺</a></li>
-          <li><a href="/spots/22">東福寺</a></li>
-          <li><a href="/spots/23">高台寺</a></li>
-          <li><a href="/spots/24">圓徳院</a></li>
-          <li><a href="/spots/25">無鄰菴</a></li>
-          <li><a href="/spots/26">永観堂</a></li>
-          <li><a href="/spots/27">泉涌寺</a></li>
-          <li><a href="/spots/28">南禅寺</a></li>
-          <li><a href="/spots/29">北野天満宮</a></li>
-          <li><a href="/spots/30">哲学の道</a></li>
-          <li><a href="/spots/31">宝厳院</a></li>
-          <li><a href="/spots/32">八瀬もみじの小径</a></li>
-          <li><a href="/spots/33">瑠璃光院</a></li>
-          <li><a href="/spots/34">もみじのトンネル</a></li>
-          <li><a href="/spots/35">貴船神社</a></li>
-          <li><a href="/spots/36">宝泉院</a></li>
-          <li><a href="/spots/37">日吉大社</a></li>
-          <li><a href="/spots/38">常寂光寺</a></li>
-          <li><a href="/spots/39">比叡山延暦寺</a></li>
-          <li><a href="/spots/40">三井寺</a></li>
-          <li><a href="/spots/41">山科疏水</a></li>
-          <li><a href="/spots/42">毘沙門堂</a></li>
-          <li><a href="/spots/43">萬福寺</a></li>
-          <li><a href="/spots/44">法金剛院</a></li>
-          <li><a href="/spots/45">大覚寺</a></li>
-          <li><a href="/spots/46">天龍寺</a></li>
-          <li><a href="/spots/47">天授庵</a></li>
-          <li><a href="/spots/48">南禅院</a></li>
-          <li><a href="/spots/49">今熊野観音寺</a></li>
-          <li><a href="/spots/50">建仁寺</a></li>
-          <li><a href="/spots/51">養源院</a></li>
-          <li><a href="/spots/52">下鴨神社</a></li>
-          <li><a href="/spots/53">松花堂庭園</a></li>
+        <ul class="spot-list">
+          <li>
+            <a href="/spots/0">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/0/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">石山寺</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/1">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/4/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">靱公園</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/2">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/8/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">ガーデンミュージアム比叡</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/3">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/12/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">勧修寺</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/4">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/16/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">京都府立植物園</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/5">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/20/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">三千院</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/6">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/24/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">城北公園</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/7">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/28/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">中之島公園</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/8">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/32/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">万博記念公園</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/9">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/36/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">枚方市 市民の森</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/10">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/40/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">ひらかたパーク</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/11">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/44/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">びわ湖大津館</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/12">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/48/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">藤森神社</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/13">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/52/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">平安神宮</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/14">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/56/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">三室戸寺</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/15">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/60/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">山田池公園</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/16">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/64/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">詩仙堂</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/17">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/68/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">金福寺</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/18">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/72/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">智積院</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/19">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/76/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">等持院</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/20">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/80/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">圓通寺</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/21">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/84/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">安楽寺</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/22">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/88/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">東福寺</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/23">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/92/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">高台寺</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/24">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/96/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">圓徳院</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/25">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/100/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">無鄰菴</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/26">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/104/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">永観堂</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/27">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/108/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">泉涌寺</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/28">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/112/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">南禅寺</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/29">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/116/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">北野天満宮</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/30">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/120/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">哲学の道</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/31">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/124/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">宝厳院</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/32">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/128/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">八瀬もみじの小径</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/33">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/132/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">瑠璃光院</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/34">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/136/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">もみじのトンネル</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/35">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/140/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">貴船神社</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/36">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/144/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">宝泉院</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/37">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/148/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">日吉大社</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/38">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/152/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">常寂光寺</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/39">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/156/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">比叡山延暦寺</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/40">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/160/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">三井寺</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/41">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/164/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">山科疏水</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/42">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/168/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">毘沙門堂</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/43">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/172/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">萬福寺</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/44">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/176/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">法金剛院</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/45">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/180/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">大覚寺</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/46">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/184/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">天龍寺</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/47">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/188/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">天授庵</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/48">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/192/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">南禅院</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/49">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/196/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">今熊野観音寺</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/50">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/200/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">建仁寺</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/51">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/204/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">養源院</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/52">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/208/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">下鴨神社</p>
+            </a>
+          </li>
+          <li>
+            <a href="/spots/53">
+              <div class="thumb">
+                <img src="https://picsum.photos/id/212/600/600" alt="" loading="lazy" />
+              </div>
+              <p class="label">松花堂庭園</p>
+            </a>
+          </li>
         </ul>
       </main>
 
       <footer class="l-footer">
         <div class="inner">
           <div class="navigation">
-            <div class="ci">
+            <div class="footer-ci">
               <h2>
                 <a href="/">
                   <svg width="95" height="94" viewBox="0 0 95 94" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -114,7 +492,7 @@
               <p>Filler text is dummy text which has no meaning however looks very similar to real text.</p>
             </div>
 
-            <div class="list">
+            <div class="footer-navs">
               <div class="hdg">Products</div>
               <nav>
                 <ul>
@@ -125,7 +503,7 @@
                 </ul>
               </nav>
             </div>
-            <div class="list">
+            <div class="footer-navs">
               <div class="hdg">Company</div>
               <nav>
                 <ul>
@@ -137,7 +515,7 @@
                 </ul>
               </nav>
             </div>
-            <div class="list">
+            <div class="footer-navs">
               <div class="hdg">Support</div>
               <nav>
                 <ul>
@@ -148,7 +526,7 @@
                 </ul>
               </nav>
             </div>
-            <div class="list">
+            <div class="footer-navs">
               <div class="hdg">Legal</div>
               <nav>
                 <ul>
